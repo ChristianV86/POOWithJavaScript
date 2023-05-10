@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POO With JavaScript</title>
+</head>
+<body>
+
+    <input type="button" value="boton1" id="boton1">
+    <input type="button" value="boton2" id="boton2">
+
+    <input type="text" name="" id="cuadro_texto">
+    
+    <script>
+
+        // el método getElementById permite que el id del boton se almacene en la variable que declaramos
+        var boton1 = document.getElementById("boton1");
+        var boton2 = document.getElementById("boton2");
+        var cuadro_texto = document.getElementById("cuadro_texto");
+        
+        /* Accediendo a las propiedades de los objetos:
+        *  Para acceder a las propiedades de un objeto, debemos primero nombrar el objeto y a continuación
+        *  con un punto (.) accedemos a esta propiedad, en estos caso accedimos a las propiedades ancho
+        *  y alto, después ponemos igual y el valor de la propiedad.
+        */
+        boton1.style.width="300px"; 
+        boton1.style.height="50px";
+        boton2.style.width="300px";
+        boton2.style.height="50px";
+        cuadro_texto.style.width="300px";
+        cuadro_texto.style.height="20px";
+        //es una especie de placeholder
+        cuadro_texto.value="Escribe aquí lo que os plasca";
+
+        /* accediendo a los métodos: 
+        *  para acceder a las propiedades de un objeto debemos primero llamar al objeto, simplemente 
+        *  nombrandolo y a continuación un punto para acceder al metodo que necesitamos, en el ejemplo
+        *  usamos el método focus, el cual enfoca el objeto haciéndolo más visible
+        */         
+        boton2.focus(); //metodo que enfoca el objeto
+        
+        
+
+    </script>
+
+</body>
+</html>
